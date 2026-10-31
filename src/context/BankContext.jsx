@@ -8,17 +8,17 @@ import {
   DEMO_50_STATE
 } from '../data/mockTransactions';
 
-const STORAGE_KEY = 'ak_bank_account_data_v3';
+const STORAGE_KEY = 'ak_bank_account_data_v4';
 
 const INITIAL_STATE = {
   bankName: 'AK Bank',
   appTitle: 'Bank Management System',
   accountHolder: 'Arka Karmoker',
   accountNumber: 'ACC-84920193',
-  balance: INITIAL_BALANCE,
-  totalDeposited: TOTAL_DEPOSITED,
-  totalWithdrawn: TOTAL_WITHDRAWN,
-  transactions: INITIAL_50_TRANSACTIONS,
+  balance: BLANK_STATE.balance,
+  totalDeposited: BLANK_STATE.totalDeposited,
+  totalWithdrawn: BLANK_STATE.totalWithdrawn,
+  transactions: BLANK_STATE.transactions,
 };
 
 export const BankContext = createContext(null);
