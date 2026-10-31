@@ -1,6 +1,12 @@
 # 🏦 AK Bank — Bank Management System
 
-A modern, responsive, and robust **Bank Management System** web application built with **React**, **Vite**, **Tailwind CSS**, and **Vitest**.
+![React](https://img.shields.io/badge/React_18-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router_DOM-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
+
+A modern, responsive, and robust **Bank Management System** web application built with React, Vite, Tailwind CSS, and Vitest.
 
 ---
 
@@ -39,36 +45,52 @@ A modern, responsive, and robust **Bank Management System** web application buil
 
 ## 🚀 Quick Start
 
-### 1. Clone & Install
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/ArkaKarmoker/bank-management-system.git
+```
+
+### 2. Navigate to Project Directory
+
+```bash
 cd bank-management-system
+```
+
+### 3. Install Dependencies
+
+```bash
 npm install
 ```
 
-### 2. Run Development Server
+### 4. Run Development Server
 
 ```bash
 npm run dev
 ```
 Open `http://localhost:5173` in your browser.
 
-### 3. Run Tests
+### 5. Run Tests
 
 ```bash
 npm test
 ```
 The project includes **31 automated unit and integration tests** verifying context state, form validations, modal workflows, pagination, and routing.
 
-### 4. Build for Production
+### 6. Build for Production
 
 ```bash
 npm run build
+```
+
+### 7. Preview Production Build
+
+```bash
 npm run preview
 ```
 
 ---
 
-## 📄 License
-This project is open-source and available under the MIT License.
+Developed by [Arka Karmoker](https://github.com/ArkaKarmoker)  
+Project Repository: https://github.com/ArkaKarmoker/bank-management-system
+
