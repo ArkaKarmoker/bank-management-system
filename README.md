@@ -1,68 +1,74 @@
 # 🏦 AK Bank — Bank Management System
 
-A sleek, responsive, and robust Bank Management System built with **React 18**, **Tailwind CSS**, **Vite**, and **Vitest**.
-
-🔗 **Repository:** [https://github.com/ArkaKarmoker/bank-management-system](https://github.com/ArkaKarmoker/bank-management-system)
+A modern, responsive, and robust **Bank Management System** web application built with **React**, **Vite**, **Tailwind CSS**, and **Vitest**.
 
 ---
 
-## 📸 Previews
+## 📸 Application Previews
 
-| Dashboard (`/`) | Deposit (`/deposit`) |
+| Dashboard (`/`) | Deposit Money (`/deposit`) |
 | :---: | :---: |
 | ![Dashboard](screenshots/Dashboard%20Page.jpeg) | ![Deposit](screenshots/Deposit%20Money%20Page.jpeg) |
 
-| Withdraw (`/withdraw`) | Transaction History (`/transactions`) |
+| Withdraw Money (`/withdraw`) | Transaction History (`/transactions`) |
 | :---: | :---: |
 | ![Withdraw](screenshots/Withdraw%20Money%20Page.jpeg) | ![Transactions](screenshots/Transaction%20History%20Page.jpeg) |
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
-- **Account Overview:** Real-time metrics for Current Balance, Total Deposited, and Total Withdrawn with recent activity preview.
-- **Deposit & Withdraw:** Controlled forms with strict input validation, preset amount chips, overdraft protection, and `useRef` auto-focus.
-- **Security Modal:** Interactive confirmation dialog modal before completing any withdrawal transaction.
-- **Transaction History:** Credit (emerald) and Debit (rose) visual styling, live text search, type filters (All / Deposits / Withdrawals), and smart pagination.
-- **State & Persistence:** React Context API (`BankContext`) with automatic `localStorage` synchronization across page reloads.
-- **Demo & Reset Controls:** 1-click modal actions in header to toggle between a clean fresh account and 50 rich mock records.
+- **Account Dashboard**: Real-time balance cards (Available Balance, Total Deposited, Total Withdrawn), account details, and recent activity overview.
+- **Deposit System**: Input validation (positive amounts, non-empty), quick preset chips (`+$50`, `+$100`, `+$250`), `useRef` auto-focus, and immediate balance updates.
+- **Withdrawal Protection**: Strict overdraft guard preventing deductions exceeding balance, accompanied by a secure modal confirmation workflow.
+- **Transaction Ledger**: Complete history with credit/debit badges, instant keyword search, category filters (All / Deposits / Withdrawals), and smart pagination.
+- **State & Persistence**: Centralized React Context (`BankContext`) synced with `localStorage` across reloads.
+- **Demo & Reset Controls**: One-click navbar controls to switch between a clean blank account ($1,000 deposit) and 50 populated demo transactions.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Core:** [React 18](https://react.dev/), [Vite](https://vitejs.dev/), [React Router DOM v6](https://reactrouter.com/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/), [Lucide React](https://lucide.dev/)
-- **Testing:** [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/), `@testing-library/jest-dom`
+- **Core**: [React 18](https://react.dev/), [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Routing**: [React Router DOM v6](https://reactrouter.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Testing**: [Vitest](https://vitest.dev/), [React Testing Library](https://testing-library.com/)
 
 ---
 
 ## 🚀 Quick Start
 
+### 1. Clone & Install
+
 ```bash
-# 1. Clone repository
 git clone https://github.com/ArkaKarmoker/bank-management-system.git
 cd bank-management-system
-
-# 2. Install dependencies
 npm install
-
-# 3. Start development server
-npm run dev
 ```
 
----
-
-## 🧪 Testing
-
-Includes **31 automated unit and integration tests** verifying state calculations, form validations, overdraft protection, pagination, and full routing journeys.
+### 2. Run Development Server
 
 ```bash
-# Run tests
+npm run dev
+```
+Open `http://localhost:5173` in your browser.
+
+### 3. Run Tests
+
+```bash
 npm test
+```
+The project includes **31 automated unit and integration tests** verifying context state, form validations, modal workflows, pagination, and routing.
+
+### 4. Build for Production
+
+```bash
+npm run build
+npm run preview
 ```
 
 ---
 
 ## 📄 License
-MIT / Educational Assignment
+This project is open-source and available under the MIT License.
